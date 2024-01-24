@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
+    <DefineConstants>_WINDOWS</DefineConstants>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="lib/win/**/*.dll" Link="\%(Filename)%(Extension)"
+      CopyToOutputDirectory="Always"
+      Pack="true"
+      PackagePath="runtimes/win-x64/native/%(RecursiveDir)%(Filename)%(Extension)" />
+
+    <None Include="lib/linux/**/*.so" Link="\%(Filename)%(Extension)"
+      CopyToOutputDirectory="Always"
+      Pack="true"
+      PackagePath="runtimes/linux-x64/native/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CaptureVision.targets" PackagePath="build/CaptureVision.targets" />
+    <None Update="model/**/*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>

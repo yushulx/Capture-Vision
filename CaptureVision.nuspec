@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>CaptureVision</id>
+        <version>1.0.1</version>
+        <title>Capture Vision SDK</title>
+        <authors>yushulx</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <license type="expression">MIT</license>
+        <readme>README.md</readme>
+        <!-- <icon>icon.png</icon> -->
+        <projectUrl>https://github.com/yushulx/Capture-Vision</projectUrl>
+        <description>This is a package that is a compound of DocumentScannerSDK and MrzScannerSDK.</description>
+        <releaseNotes>Merged DocumentScannerSDK and MrzScannerSDK into one package.</releaseNotes>
+        <copyright>$copyright$</copyright>
+        <tags>
+            MRZ;Android;passport;id-card;visa;machine-readable-zone;document;document-scan;edge-detection;document-detection</tags>
+    </metadata>
+    <files>
+        <file src="README.md" target="" />
+        <file src="LICENSE.txt" target="" />
+
+        <!-- Desktop -->
+        <file src="desktop\lib\win\**\*.*" target="runtimes\win-x64\native" />
+        <file src="desktop\lib\linux\**\*.*" target="runtimes\linux-x64\native" />
+        <file src="desktop\bin\Release\net7.0\CaptureVision.dll" target="lib\net7.0" />
+        <file src="desktop\CaptureVision.targets" target="build" />
+        <file src="desktop\model\**\*.*" target="model" />
+
+
+        <!-- Android -->
+        <file src="android\bin\Release\net7.0-android\**\*.*" target="lib\net7.0-android33.0" />
+
+    </files>
+</package>
