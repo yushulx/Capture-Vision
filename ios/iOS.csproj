@@ -1,12 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-	  <TargetFramework>net7.0-ios</TargetFramework>
-	  <Nullable>enable</Nullable>
-	  <ImplicitUsings>true</ImplicitUsings>
-	  <AssemblyName>CaptureVision</AssemblyName>
-	  <IsBindingProject>true</IsBindingProject>
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0-ios</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>true</ImplicitUsings>
+		<AssemblyName>CaptureVision</AssemblyName>
+		<IsBindingProject>true</IsBindingProject>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<ObjcBindingApiDefinition Include="DynamsoftCore/ApiDefinitions.cs" />
