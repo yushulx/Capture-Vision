@@ -2,7 +2,7 @@
 <package>
     <metadata>
         <id>CaptureVision</id>
-        <version>1.0.1</version>
+        <version>2.0.0</version>
         <title>Capture Vision SDK</title>
         <authors>yushulx</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,11 +10,11 @@
         <readme>README.md</readme>
         <!-- <icon>icon.png</icon> -->
         <projectUrl>https://github.com/yushulx/Capture-Vision</projectUrl>
-        <description>This is a package that is a compound of DocumentScannerSDK and MrzScannerSDK.</description>
-        <releaseNotes>Merged DocumentScannerSDK and MrzScannerSDK into one package.</releaseNotes>
+        <description>This package is a compound of DocumentScannerSDK and MrzScannerSDK.</description>
+        <releaseNotes>Added support for iOS.</releaseNotes>
         <copyright>$copyright$</copyright>
         <tags>
-            MRZ;Android;passport;id-card;visa;machine-readable-zone;document;document-scan;edge-detection;document-detection</tags>
+            MRZ;Android;iOS;passport;id-card;visa;machine-readable-zone;document;document-scan;edge-detection;document-detection</tags>
     </metadata>
     <files>
         <file src="README.md" target="" />
@@ -30,6 +30,11 @@
 
         <!-- Android -->
         <file src="android\bin\Release\net7.0-android\**\*.*" target="lib\net7.0-android33.0" />
+
+        <!-- iOS -->
+        <file src="ios\bin\Release\net7.0-ios\CaptureVision.dll" target="lib\net6.0-ios16.1" />
+        <file src="ios\bin\Release\net7.0-ios\CaptureVision.resources\"
+            target="lib\net6.0-ios16.1\CaptureVision.resources" />
 
     </files>
 </package>

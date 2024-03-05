@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+	  <TargetFramework>net7.0-ios</TargetFramework>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>true</ImplicitUsings>
+	  <AssemblyName>CaptureVision</AssemblyName>
+	  <IsBindingProject>true</IsBindingProject>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="DynamsoftCore/ApiDefinitions.cs" />
+		<ObjcBindingCoreSource Include="DynamsoftCore/StructsAndEnums.cs" />
+		<NativeReference Include="DynamsoftCore.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+
+	<!--MRZ-->
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="DynamsoftLabelRecognizer/ApiDefinitions.cs" />
+		<ObjcBindingCoreSource Include="DynamsoftLabelRecognizer/StructsAndEnums.cs" />
+		<NativeReference Include="DynamsoftLabelRecognizer.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="MRZRecognizer/ApiDefinitions.cs" />
+		<ObjcBindingCoreSource Include="MRZRecognizer/StructsAndEnums.cs" />
+		<NativeReference Include="MRZRecognizer.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+
+	<!--Document-->
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="DynamsoftDocumentNormalizer/ApiDefinitions.cs" />
+		<ObjcBindingCoreSource Include="DynamsoftDocumentNormalizer/StructsAndEnums.cs" />
+		<NativeReference Include="DynamsoftDocumentNormalizer.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="DynamsoftImageProcessing/ApiDefinitions.cs" />
+		<NativeReference Include="DynamsoftImageProcessing.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="DynamsoftIntermediateResult/ApiDefinitions.cs" />
+		<NativeReference Include="DynamsoftIntermediateResult.framework">
+			<Kind>Framework</Kind>
+			<Frameworks></Frameworks>
+		</NativeReference>
+	</ItemGroup>
+</Project>
