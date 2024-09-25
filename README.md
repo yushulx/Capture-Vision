@@ -3,7 +3,7 @@ This package is a compound of [DocumentScannerSDK](https://www.nuget.org/package
 
 
 ## License Activation
-Click [here](https://www.dynamsoft.com/customer/license/trialLicense) to get a valid license key.
+Click [here](https://www.dynamsoft.com/customer/license/trialLicense/?product=dcv&package=cross-platform) to get a valid license key.
 
 ## Supported Platforms
 - Windows (x64)
